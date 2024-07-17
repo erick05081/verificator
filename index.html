@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Links da Shopee</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Verificador de Links da Shopee</h1>
+      <textarea
+        id="product-urls"
+        placeholder="Insira as URLs das páginas, uma por linha"
+      ></textarea>
+      <br />
+      <button onclick="checkProducts()">Verificar</button>
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="results-container">
+        <h2>Resultados</h2>
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="results"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
